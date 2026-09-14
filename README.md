@@ -5,13 +5,13 @@
 **PPO for 128k-context math reasoning with a head-less critic, a mean-reward-seeded value
 head and a length-adaptive GAE λ — MiniCPM5-2B recipe, code, data and weights.**
 
-[中文](README-cn.md) · [Blog post](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic) · [博客（中文）](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn)
+[中文](README-cn.md) · [Blog post](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic) · [博客（中文）](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn) · [知乎](https://zhuanlan.zhihu.com/p/2080714608432657759)
 
 [🤗 Base model](https://huggingface.co/openbmb/JustRL-II-base-model) · [🤗 Training data](https://huggingface.co/datasets/openbmb/UltraData-RL-2609/tree/main/data/Math)
 
 </div>
 
-- **Blog**: [JustRL-II: Scaling Small LLMs to 128k Reasoning with a Critic](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic) — the full write-up, experiments and ablations this code implements.
+- **Blog**: [JustRL-II: Scaling Small LLMs to 128k Reasoning with a Critic](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic) — the full write-up, experiments and ablations this code implements. Chinese version on [Notion](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn) or [Zhihu](https://zhuanlan.zhihu.com/p/2080714608432657759).
 - **Method**: [`docs/method.md`](docs/method.md) — what each piece does and where it lives.
 - **Reproduce**: [`docs/reproduce.md`](docs/reproduce.md) — topology, launch, resume, eval.
 - **Data**: [`docs/data.md`](docs/data.md) — the UltraData-RL-Math-2609 training set and AIME eval sets.

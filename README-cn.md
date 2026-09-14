@@ -4,13 +4,13 @@
 
 **面向 128k 长上下文数学推理的 PPO：无 LM 头的 critic、按平均奖励初始化的 value head、长度自适应的 GAE λ —— MiniCPM5-2B 配方、代码、数据与权重。**
 
-[English](README.md) · [博客](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn) · [Blog (EN)](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic)
+[English](README.md) · [博客](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn) · [知乎](https://zhuanlan.zhihu.com/p/2080714608432657759) · [Blog (EN)](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic)
 
 [🤗 基础模型](https://huggingface.co/openbmb/JustRL-II-base-model) · [🤗 训练数据](https://huggingface.co/datasets/openbmb/UltraData-RL-2609/tree/main/data/Math)
 
 </div>
 
-- **博客**：[JustRL-II：用 critic 把小模型推到 128k 推理](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn)（[English](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic)）—— 完整的方法、实验与消融，本仓库是它的实现。
+- **博客**：[JustRL-II：用 critic 把小模型推到 128k 推理](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn)（[知乎](https://zhuanlan.zhihu.com/p/2080714608432657759) · [English](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic)）—— 完整的方法、实验与消融，本仓库是它的实现。
 - **方法**：[`docs/method.md`](docs/method.md) —— 每个组件做什么、代码在哪。
 - **复现**：[`docs/reproduce.md`](docs/reproduce.md) —— 拓扑、启动、续训、评测。
 - **数据**：[`docs/data.md`](docs/data.md) —— UltraData-RL-Math-2609 训练集与 AIME 评测集。
