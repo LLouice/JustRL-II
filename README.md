@@ -7,6 +7,8 @@ head and a length-adaptive GAE λ — MiniCPM5-2B recipe, code, data and weights
 
 [中文](README-cn.md) · [Blog post](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic) · [博客（中文）](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn)
 
+[🤗 Base model](https://huggingface.co/openbmb/JustRL-II-base-model) · [🤗 Training data](https://huggingface.co/datasets/openbmb/UltraData-RL-2609/tree/main/data/Math)
+
 </div>
 
 - **Blog**: [JustRL-II: Scaling Small LLMs to 128k Reasoning with a Critic](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic) — the full write-up, experiments and ablations this code implements.
@@ -43,8 +45,8 @@ docker build -t justrl2 . && docker run --gpus all --ipc=host --network=host -it
 #    (bare-metal alternative: third_party/README.md)
 
 # 1. weights and data (Hugging Face)
-bash   justrl2/prepare_model.sh          # -> ./models
-python justrl2/prepare_data.py           # -> ./datasets
+bash   justrl2/prepare_model.sh          # openbmb/JustRL-II-base-model      -> ./models
+python justrl2/prepare_data.py           # openbmb/UltraData-RL-2609 (Math)  -> ./datasets
 
 # 2. train (16 nodes x 8 GPU for the reference run; run on every node)
 bash justrl2/train.sh justrl2/configs/minicpm5-2b-math-128k.env

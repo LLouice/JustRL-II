@@ -6,6 +6,8 @@
 
 [English](README.md) · [博客](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn) · [Blog (EN)](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic)
 
+[🤗 基础模型](https://huggingface.co/openbmb/JustRL-II-base-model) · [🤗 训练数据](https://huggingface.co/datasets/openbmb/UltraData-RL-2609/tree/main/data/Math)
+
 </div>
 
 - **博客**：[JustRL-II：用 critic 把小模型推到 128k 推理](https://panhaoxuan.notion.site/justrl-ii-small-llms-to-128k-reasoning-with-a-critic-cn)（[English](https://panhaoxuan.notion.site/justrl-ii-scaling-small-llms-to-128k-reasoning-with-a-critic)）—— 完整的方法、实验与消融，本仓库是它的实现。
@@ -42,8 +44,8 @@ docker build -t justrl2 . && docker run --gpus all --ipc=host --network=host -it
 #    （不用镜像的裸机方案见 third_party/README.md）
 
 # 1. 权重与数据（Hugging Face）
-bash   justrl2/prepare_model.sh          # -> ./models
-python justrl2/prepare_data.py           # -> ./datasets
+bash   justrl2/prepare_model.sh          # openbmb/JustRL-II-base-model      -> ./models
+python justrl2/prepare_data.py           # openbmb/UltraData-RL-2609 (Math)  -> ./datasets
 
 # 2. 训练（参考实验为 16 节点 x 8 卡；每个节点都执行）
 bash justrl2/train.sh justrl2/configs/minicpm5-2b-math-128k.env

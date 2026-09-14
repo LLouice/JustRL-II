@@ -3,7 +3,7 @@
 ## Training set — `openbmb/UltraData-RL-2609`, config `Math`
 
 JustRL2 trains on the **Math** slice of
-[UltraData-RL-2609](https://huggingface.co/datasets/openbmb/UltraData-RL-2609):
+[UltraData-RL-2609](https://huggingface.co/datasets/openbmb/UltraData-RL-2609/tree/main/data/Math):
 **32,412** competition- and textbook-style problems, each with a single extractable
 answer verified against `ground_truth`. `python justrl2/prepare_data.py` downloads it
 and writes `<data-dir>/UltraData-RL-Math-2609.jsonl`.
@@ -27,7 +27,7 @@ math-verify as a fallback).
 ### Why the difficulty distribution matters here
 
 The dataset card documents that difficulty is calibrated **against the RL initialization
-checkpoint** — the same `openbmb/JustRL-II-base-model` this recipe starts from: items it
+checkpoint** — the same [`openbmb/JustRL-II-base-model`](https://huggingface.co/openbmb/JustRL-II-base-model) this recipe starts from: items it
 already solves at pass rate 1 are dropped (no gradient), the learnable band is kept, and
 pass-rate-0 items with a confirmed-valid label are kept and left to online dynamic
 sampling. That is why `DYNAMIC_SAMPLING=1` is part of the recipe: it discards

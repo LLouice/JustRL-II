@@ -12,8 +12,11 @@ Inside the container:
 
 ```bash
 bash   justrl2/prepare_model.sh     # openbmb/JustRL-II-base-model -> models/ (+ torch_dist), needs 1 GPU
-python justrl2/prepare_data.py      # -> datasets/
+python justrl2/prepare_data.py      # openbmb/UltraData-RL-2609 (Math) -> datasets/
 ```
+
+Model: <https://huggingface.co/openbmb/JustRL-II-base-model> ·
+Data: <https://huggingface.co/datasets/openbmb/UltraData-RL-2609/tree/main/data/Math>
 
 ## Hardware and topology
 
